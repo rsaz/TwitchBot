@@ -1,6 +1,6 @@
 # Twitch Bot made with .NET Core
 
-![BOT](https://github.com/rsaz/TwitchBot/blob/master/bot.jpg)
+![BOT](https://github.com/rsaz/TwitchBot/blob/master/bot.jpg = 250x250)
 
 ## Concept
 
