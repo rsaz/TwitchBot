@@ -28,11 +28,17 @@ namespace twitchBot
             // Initial connection
             Interpreter.Init(client.ReadChatMessage());
 
+            BasicCommands commands = new BasicCommands();
+
             // Message listener
             while (true)
             {
                 var message = client.ReadChatMessage();
-                Interpreter.Chat(message);
+                var msg = Interpreter.Chat(message);
+
+                // listen to commands and respond
+                var response = commands.CommandListener(msg);
+                client.SendChatMessages(response);
             }
 
             Console.ReadKey();

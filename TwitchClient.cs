@@ -42,7 +42,11 @@ namespace twitchBot
 
         public void SendChatMessages(string message)
         {
+            // server to client 
             writer.WriteLine($":{username}!{username}@{username}.tmi.twitch.tv PRIVMSG #{channelName} :{message}");
+
+            // < client to server 
+            writer.WriteLine($"PRIVMSG #{channelName} : {message}");
         }
 
     }

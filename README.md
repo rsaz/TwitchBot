@@ -16,7 +16,7 @@ To provide you a boilerplate, fully functional chat bot setup for twitch using .
 - **Ping**: A separate thread to ping twitch server every 5 minutes (_Time is customizable_). This functionality prevents your twitch bot to be disconnected;
 - **Interpretator**: A static class responsible to humanize the messages that can be read and written in the chat;
 - **Secrets**: Is a resource from .NET only that allows you to hide or encapsulate critical information such as username, password, oauth, channel, etc of your application. You can replace this resource for a static class or dotenv to keep your critical data safe;
-- **Commands**: This functionality is to give the application the ability to respond commands given by the viewers in the chat. You can customize the name of commands and how they can respond;
+- **Commands**: This functionality is to give the application the ability to respond commands given by the viewers in the chat. You can customize the name of commands and how they can respond; Command Initials can be customized. Ex.: "!", "!R", etc.
 
 ## Tools
 

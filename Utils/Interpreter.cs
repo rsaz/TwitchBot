@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace twitchBot.Utils
 {
@@ -23,8 +24,9 @@ namespace twitchBot.Utils
             Console.WriteLine($"user: {user}");
             Console.WriteLine($"message: {welcome}");
         }
-        public static void Chat(string message)
+        public static Dictionary<string, string> Chat(string message)
         {
+            var msgData = new Dictionary<string, string>();
             var msg = message;
             if (msg.Contains("PRIVMSG"))
             {
@@ -37,7 +39,12 @@ namespace twitchBot.Utils
                 splitPoint = msg.IndexOf(":", 1);
                 msg = msg.Substring(splitPoint + 1);
                 Console.WriteLine($"{chatName} : {msg}");
+
+                msgData.Add(chatName, msg);
+                return msgData;
             }
+
+            return null;
         }
     }
 }
