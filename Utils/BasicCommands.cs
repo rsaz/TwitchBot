@@ -31,6 +31,8 @@ namespace twitchBot.Utils
             {
                 case "!project":
                     return "Twitch Bot Project";
+                case "!akira":
+                    return $"Hey {user}, Akira is a nice person. He is my boss";
                 default:
                     return "I don't have answer for that yet";
             }

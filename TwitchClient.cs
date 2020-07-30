@@ -27,7 +27,7 @@ namespace twitchBot
             writer.WriteLine($"NICK {username}");
             writer.WriteLine($"USER {username} 8 * :{username}");
             writer.WriteLine($"JOIN #{channelName}");
-            SendChatMessages("YourBot");
+            SendChatMessages("Me acordaram. To aqui, pronto! Como posso ajuda-los?");
 
             writer.Flush();
         }
@@ -44,9 +44,10 @@ namespace twitchBot
         {
             // server to client 
             writer.WriteLine($":{username}!{username}@{username}.tmi.twitch.tv PRIVMSG #{channelName} :{message}");
+            writer.Flush();
 
             // < client to server 
-            writer.WriteLine($"PRIVMSG #{channelName} : {message}");
+            //writer.WriteLine($"PRIVMSG #{channelName} : {message}");
         }
 
     }
