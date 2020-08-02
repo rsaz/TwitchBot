@@ -24,7 +24,7 @@ To provide you a boilerplate, fully functional chat bot setup for twitch using .
 2. Download the extension User Secrets or set via Cli command: **dotnet user-secrets set YourSecretName "YourSecretContent"**
 3. If you are using the extention, right click in the twitchBot.csproj and select Manage user secret
 4. Your secret should have this configuration
-   - ![Secret](https://github.com/rsaz/TwitchBot/blob/master/Secrets.png)
+   - ![Secret](https://github.com/rsaz/TwitchBot/blob/master/Secrets.PNG)
 5. Create a Twitch account just for your bot. Suggestion: you can create an account with the same email you are currently using your main account
 6. To find your Twitch oauth click in this link: [Twitch Oauth](https://twitchapps.com/tmi/)
 7. In the secrets file just set your:
