@@ -18,6 +18,21 @@ To provide you a boilerplate, fully functional chat bot setup for twitch using .
 - **Secrets**: Is a resource from .NET only that allows you to hide or encapsulate critical information such as username, password, oauth, channel, etc of your application. You can replace this resource for a static class or dotenv to keep your critical data safe;
 - **Commands**: This functionality is to give the application the ability to respond commands given by the viewers in the chat. You can customize the name of commands and how they can respond; Command Initials can be customized. Ex.: "!", "!R", etc.
 
+## How To Use
+
+1. Download or Clone the repo [Git](https://github.com/rsaz/TwitchBot.git)
+2. Download the extension User Secrets or set via Cli command: **dotnet user-secrets set YourSecretName "YourSecretContent"**
+3. If you are using the extention, right click in the twitchBot.csproj and select Manage user secret
+4. Your secret should have this configuration
+   - ![Secret](https://github.com/rsaz/TwitchBot/blob/master/Secrets.png)
+5. Create a Twitch account just for your bot. Suggestion: you can create an account with the same email you are currently using your main account
+6. To find your Twitch oauth click in this link: [Twitch Oauth](https://twitchapps.com/tmi/)
+7. In the secrets file just set your:
+   - username: yourBotTwitchAccount
+   - Oauth: [Twitch Oauth](https://twitchapps.com/tmi/)
+   - Channel: channel you want to connect your bot
+8. In the class BasicCommands you can define your commands and how your bot repond to it.
+
 ## Tools
 
 - VSCODE IDE

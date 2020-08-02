@@ -27,7 +27,8 @@ namespace twitchBot
             writer.WriteLine($"NICK {username}");
             writer.WriteLine($"USER {username} 8 * :{username}");
             writer.WriteLine($"JOIN #{channelName}");
-            SendChatMessages("Me acordaram. To aqui, pronto! Como posso ajuda-los?");
+            //SendChatMessages("Me acordaram. To aqui, pronto! Como posso ajuda-los?");
+            SendChatMessages("Hi there");
 
             writer.Flush();
         }

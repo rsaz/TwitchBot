@@ -29,12 +29,12 @@ namespace twitchBot.Utils
         {
             switch (msg.ToLower())
             {
-                case "!project":
-                    return "Twitch Bot Project";
-                case "!akira":
-                    return $"Hey {user}, Akira is a nice person. He is my boss";
+                case "!cmd1":
+                    return $"Hey {user}, this is the command 1";
+                case "!cmd2":
+                    return $"Hey {user}, this is the command 2";
                 default:
-                    return "I don't have answer for that yet";
+                    return "I dont know this command, please teach me!";
             }
         }
     }
